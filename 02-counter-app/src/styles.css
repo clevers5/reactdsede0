@@ -4,4 +4,28 @@ html, body{
     font-family: 'Roboto', sans-serif;
     font-size: 1.0rem;
     padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;  
+    color: #fff;
+    font-size: 1.0rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.AddButton{
+    background-color: #ed4f2f;
+}
+
+.SubtractButton{
+    background-color: #2fed4f;
 }
