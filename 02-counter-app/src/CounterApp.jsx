@@ -47,6 +47,6 @@ CounterApp.propTypes = {
 }
 
 CounterApp.defaultProps = {
-    value: 30,
+    value: 7,
 }
 
