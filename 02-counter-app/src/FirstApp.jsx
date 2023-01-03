@@ -15,9 +15,9 @@ import React from 'react';
 export const FirstApp = ({title, subtitle, name}) => {
   // console.log(props);
   
-  if (!title){
-    throw new Error('El titulo es requerido');
-  }
+  // if (!title){
+  //   throw new Error('El titulo es requerido');
+  // }
 
   return (
     
@@ -25,7 +25,7 @@ export const FirstApp = ({title, subtitle, name}) => {
     <React.Fragment>
         <h1>{title}</h1>
         <h2>{subtitle}</h2>
-        <h2>{name}</h2>
+        <h3>{name}</h3>
         
         {/* <h2>{newMessage.nombre}</h2>
         <h1>{getResult()}</h1> */}
@@ -42,14 +42,14 @@ export const FirstApp = ({title, subtitle, name}) => {
 //Restricciones de los props
 FirstApp.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.number,
+  subtitle: PropTypes.string.isRequired,
 };
 
 
 //Entran antes que los propTypes
 FirstApp.defaultProps = {
-  title: "Titulo por defecto",
-  subtitle: 0,
+   //title: "Titulo por defectos",
+  subtitle: 'Soy un subtitulo',
   name : "Clevers Arnez"
   
 }

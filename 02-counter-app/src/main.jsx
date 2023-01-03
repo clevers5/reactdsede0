@@ -9,7 +9,7 @@ import './styles.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
      {/* <HelloWorldApp /> */}
-        {/* <FirstApp/> */}
-        {<CounterApp/>}
+        <FirstApp title='Hola, soy un título'/>
+        {/* {<CounterApp/>} */}
 
     </React.StrictMode>) 

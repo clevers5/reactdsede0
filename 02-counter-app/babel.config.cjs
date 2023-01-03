@@ -3,10 +3,9 @@ module.exports = {
     [
       "@babel/preset-env",
       {
-        targets: {
-          node: "current",
-        },
+        targets: { esmodules: true },
       },
     ],
-  ], // Para que funcione en node
+    ["@babel/preset-react", { runtime: "automatic" }],
+  ],
 };
