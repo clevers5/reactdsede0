@@ -23,7 +23,8 @@ export const FirstApp = ({title, subtitle, name}) => {
     
     //Fragment <> </> is the same as <React.Fragment> </React.Fragment>
     <React.Fragment>
-        <h1>{title}</h1>
+        <h1 data-testid = 'test-title'>{title}</h1>
+        <h2>{subtitle}</h2>
         <h2>{subtitle}</h2>
         <h3>{name}</h3>
         
