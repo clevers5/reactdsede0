@@ -1,10 +1,11 @@
 import { useState } from "react"
-import { AddCategory } from "./components/AddCategory"
-import { GifGrid } from "./components/GifGrid";
+import { GifGrid, } from "./components/GifGrid";
+import { AddCategory } from "./components/AddCategory";
+
 
 export const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState(['Pokemon', 'Digimon', 'Dragon Ball']);
+    const [categories, setCategories] = useState(['Digimon', 'Dragon Ball', 'Yu-Gi-Oh']);
   
      const onAddCategory = ( newCategory) => {
       // setCategories(categories => [...categories, 'Yu-Gi-Oh']);
@@ -12,7 +13,7 @@ export const GifExpertApp = () => {
       //No deja agregar categorias repetidas
       if(categories.includes(newCategory)) return;
       
-      setCategories([...categories, newCategory ]);
+      setCategories([newCategory, ...categories ]);
       // categories.push(newCategory);
     };
 
